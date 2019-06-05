@@ -1,0 +1,16 @@
+.img-logo {
+    margin-top: 20px;
+}
+
+.nav-tabs .nav-link.active{
+    color: #0ea330;
+    background-color: #fff;
+    border-color: #0ea330 #0ea330 #ffffff;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #0ea330;
+}
+
+
+

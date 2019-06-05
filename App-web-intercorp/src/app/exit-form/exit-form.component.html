@@ -1,0 +1,41 @@
+<div class="background col-xl-6 col-lg-8 col-md-10 col-sm-10" style="margin: auto">
+  <div class="padding">
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Total de Clientes</th>
+            <th scope="col">Edad Promedio</th>
+            <th scope="col">Desviacion Estandar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{dataObjectCustomer.length}}</td>
+            <td>{{averageAge}}</td>
+            <td>{{standartDevTotal}}</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
+  <div class="padding">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Edad</th>
+        </tr>
+      </thead>
+      <tbody *ngFor= "let list of dataObjectCustomer ; let indice=index">
+        <tr>
+          <th scope="row">{{indice+1}}</th>
+          <td>{{list.name}}</td>
+          <td>{{list.lastName}}</td>
+          <td>{{list.age}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>  
